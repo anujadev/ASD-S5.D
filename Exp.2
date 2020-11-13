@@ -1,0 +1,9 @@
+create table employee(Code char(4),Name char (10),Designation char(30),dob (date),salary (numeric);
+insert into employee values('e1','lizy','office staff','1990-08-21','45000');
+insert into employee values('e2','suzy','HOD','1983-10-25','70000');
+select * from employee;
+update employee
+        set salary='100000'
+	where code='e2';
+delete from employee
+	where code='e1';
