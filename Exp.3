@@ -1,0 +1,8 @@
+create table employee(name char(25),empid int(25),primary key(empid));
+insert into primary values('aaa','20'),('bbb','10');
+create table employee details(empid int(25),dept char(25));
+insert into employee details values('c18','accountant'),('c19','office staff');
+select * from employee
+		where empid in (select empid from employee details);
+select * from employee
+	        where empid not in (select empid from employee details);
